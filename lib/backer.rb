@@ -8,6 +8,6 @@ class Backer
 
   def add_baker(bake)
     raise MismatchTypeError if bake.class != Baker
-
+    bakers << bake
   end
 end
