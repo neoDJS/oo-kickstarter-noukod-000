@@ -3,7 +3,7 @@ class Backer
   attr_reader :backers
   def initialize(name="")
     @name = name
-    backers = []
+    @backers = []
   end
 
   # def add_baker(bake="")
