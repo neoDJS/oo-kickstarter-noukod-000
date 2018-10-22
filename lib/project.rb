@@ -1,3 +1,4 @@
+require 'pry'
 class Project
   attr_accessor :title
   attr_reader :backed_projects
@@ -8,5 +9,6 @@ class Project
 
   def back_project(proj)
     bakers << proj if proj.class != Project
+    binding.pry
   end
 end
