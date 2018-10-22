@@ -6,7 +6,7 @@ class Backer
     @backers = []
   end
 
-  def add_baker(bake="")
+  def add_backer(bake="")
     @bakers << bake if bake.class != Baker
   end
 
