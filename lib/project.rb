@@ -7,7 +7,9 @@ class Project
   end
 
   def add_backer(bake="")
-    @bakers << bake if bake.class == Backer && !@bakers.include(bake)
-    bake.back_project(self)
+    if bake.class == Backer && !@bakers.include(bake)
+      @bakers << bake 
+      bake.back_project(self)
+    end
   end
 end
