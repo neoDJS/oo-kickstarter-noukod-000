@@ -10,4 +10,5 @@ class Backer
     raise MismatchTypeError if bake.class != Baker
     bakers << bake
   end
+  
 end
