@@ -7,7 +7,7 @@ class Project
     @backed_projects = []
   end
 
-  def back_project(proj)
+  def back_project(proj="")
     bakers << proj if proj.class != Project
     binding.pry
   end
