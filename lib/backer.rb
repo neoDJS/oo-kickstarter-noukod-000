@@ -7,7 +7,7 @@ class Backer
   end
 
   def add_baker(bake)
-    bakers << bake if bake.class != Baker
+    @bakers << bake if bake.class != Baker
   end
 
 end
