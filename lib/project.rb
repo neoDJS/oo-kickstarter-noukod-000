@@ -6,10 +6,10 @@ class Project
     @backers = []
   end
 
-  def add_backer(bake="")
-    if bake.class == Backer && !@backers.include(bake)
-      @backers << bake
-      bake.back_project(self)
+  def add_backer(backe="")
+    if backe.class == Backer && !@backers.include(backe)
+      @backers << backe
+      backe.back_project(self)
     end
   end
 end
