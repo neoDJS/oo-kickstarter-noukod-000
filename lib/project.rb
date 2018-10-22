@@ -3,10 +3,10 @@ class Project
   attr_reader :backed_projects
   def initialize(title="")
     @title = title
-    @backed_projects = []
+    @backers = []
   end
 
-  # def back_project(proj="")
-  #   @backed_projects << proj #if proj.class != Project
-  # end
+  def add_backer(bake="")
+    @bakers << bake if bake.class != Baker
+  end
 end
