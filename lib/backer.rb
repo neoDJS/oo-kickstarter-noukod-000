@@ -3,11 +3,10 @@ class Backer
   attr_reader :backers
   def initialize(name="")
     @name = name
-    @backers = []
+    @backed_projects = []
   end
 
-  # def add_backer(bake="")
-  #   @bakers << bake if bake.class != Baker
-  # end
-
+  def back_project(proj="")
+    @backed_projects << proj if proj.class != Project
+  end
 end
