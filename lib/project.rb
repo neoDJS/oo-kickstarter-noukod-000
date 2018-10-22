@@ -8,7 +8,7 @@ class Project
   end
 
   def back_project(proj="")
-    @backed_projects << proj if proj.class != Project
+    @backed_projects << proj #if proj.class != Project
     binding.pry
   end
 end
