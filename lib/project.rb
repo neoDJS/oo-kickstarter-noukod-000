@@ -6,7 +6,7 @@ class Project
     @backed_projects = []
   end
 
-  def back_project(proj="")
-    @backed_projects << proj #if proj.class != Project
-  end
+  # def back_project(proj="")
+  #   @backed_projects << proj #if proj.class != Project
+  # end
 end
